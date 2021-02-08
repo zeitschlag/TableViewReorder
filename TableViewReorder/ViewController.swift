@@ -37,7 +37,6 @@ extension ViewController: UITableViewDataSource {
     let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.reuseIdentifer, for: indexPath)
 
     cell.textLabel?.text = "\(indexPath.section).\(indexPath.row)"
-    cell.showsReorderControl = true
 
     return cell
   }
